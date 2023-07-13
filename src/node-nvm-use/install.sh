@@ -123,6 +123,8 @@ fi
 
 # bash nvm-use
 bashrc_nvm_use_snippet="$(cat << EOF
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 cdnvm() {
     command cd "$@" || return $?
     nvm_path=$(nvm_find_up .nvmrc | tr -d '\n')
@@ -173,6 +175,8 @@ EOF
 
 # zsh nvm-use
 zshrc_nvm_use_snippet="$(cat << EOF
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 # place this after nvm initialization!
 autoload -U add-zsh-hook
 
