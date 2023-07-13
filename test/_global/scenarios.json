@@ -1,13 +1,8 @@
 {
-    "color_and_hello": {
-        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "node": {
+        "image": "ubuntu:focal",
         "features": {
-            "color": {
-                "favorite": "purple"
-            },
-            "hello": {
-                "greeting": "Greetings"
-            }
+            "node-nvm-use": {}
         }
     }
 }
