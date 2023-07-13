@@ -1,5 +1,5 @@
 {
-    "node": {
+    "node-nvm-use": {
         "image": "ubuntu:focal",
         "features": {
             "node-nvm-use": {}

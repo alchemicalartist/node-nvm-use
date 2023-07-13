@@ -13,7 +13,7 @@ jobs:
     strategy:
       matrix:
         features:
-          - node
+          - node-nvm-use
         baseImage:
           - debian:latest
           - ubuntu:latest
@@ -33,7 +33,7 @@ jobs:
     strategy:
       matrix:
         features:
-          - node
+          - node-nvm-use
     steps:
       - uses: actions/checkout@v3
 
